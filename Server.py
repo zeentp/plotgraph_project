@@ -72,7 +72,7 @@ while True:
     while True:
         x_min = connectionSocket.recv(1024).decode() # รับ
         x_min = float(x_min)
-        print("From Client: " + str(x_min))
+        print("From Client x min : " + str(x_min))
         if x_min < 0:
             msg = 'Please enter a positive number'
             connectionSocket.send(msg.encode())
@@ -86,7 +86,7 @@ while True:
     while True:
         x_max = connectionSocket.recv(1024).decode() # รับ
         x_max = float(x_max)
-        print("From Client: " + str(x_max))
+        print("From Client x max : " + str(x_max))
         if x_max <= x_min and x_max >= 0:
             msg = 'Please input correct value'
             connectionSocket.send(msg.encode())
@@ -103,7 +103,7 @@ while True:
     while True:
         y_min = connectionSocket.recv(1024).decode()
         y_min = float(y_min)
-        print("From Client: " + str(y_min))
+        print("From Client y min : " + str(y_min))
         if y_min < 0:
             msg = 'Please enter a positive number'
             connectionSocket.send(msg.encode())
@@ -118,7 +118,7 @@ while True:
         y_max = connectionSocket.recv(1024).decode()
         y_max = float(y_max)
 
-        print("From Client: " + str(y_max))
+        print("From Client y max: " + str(y_max))
         if y_max <= y_min:
             msg = ('Please input correct value')
             connectionSocket.send(msg.encode())
