@@ -148,9 +148,4 @@ while True:
             break
     print("Client disconnected.")
     connectionSocket, addr = serverSocket.accept()
-    # if(again.lower() == "yes"):
-    #     continue
-    # elif(again.lower() == "no"):
-    #     
-    #     connectionSocket, addr = serverSocket.accept()
 connectionSocket.close()

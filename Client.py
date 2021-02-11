@@ -10,7 +10,7 @@ def plotGraph(x,y,choice):
             plt.text(i_x, i_y, '({}, {})'.format(i_x, i_y))
         plt.title('BVA graph!') 
         plt.show()
-    elif choice == "2":
+    elif choice == "3":
         plt.xlabel('X',color="blue") 
         plt.ylabel('                                                                                              Y',color="blue")
         plt.scatter(x,y)
@@ -18,7 +18,7 @@ def plotGraph(x,y,choice):
             plt.text(i_x, i_y, '({}, {})'.format(i_x, i_y))
         plt.title('Robustness graph!') 
         plt.show()
-    elif choice == "3":
+    elif choice == "2":
         plt.xlabel('X',color="blue") 
         plt.ylabel('                                                                                              Y',color="blue")      
         plt.scatter(x,y)
